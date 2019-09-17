@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="vanillahtml.js"></script>
+    <script>
+        html("span", function() {  
+            this.innerHTML = "hallo";
+        });
+        setTimeout(function() {
+            document.body.appendChild(document.createElement("span"));
+        }, 1000);
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <span></span>
+</body>
+</html>
